@@ -1,7 +1,7 @@
 package ru.yandex;
 
 public class Calculator {
-    public Integer calculate(Integer first, Integer second, String operation) {
+    public Double calculate(Double first, Integer second, String operation) {
 
         switch (operation) {
             case "+":
@@ -14,7 +14,7 @@ public class Calculator {
                 return first * second;
             default:
                 System.out.println("Такая операция не поддерживается.");
-                return -1;
+                return Double.valueOf(-1);
         }
     }
 
